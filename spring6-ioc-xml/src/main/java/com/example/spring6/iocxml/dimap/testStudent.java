@@ -4,7 +4,7 @@ import org.springframework.context.support.ClassPathXmlApplicationContext;
 
 public class testStudent {
     public static void main(String[] args) {
-        ClassPathXmlApplicationContext context = new ClassPathXmlApplicationContext("bean-dimap.xml");
+        ClassPathXmlApplicationContext context = new ClassPathXmlApplicationContext("bean-diref.xml");
         Student student = context.getBean("student", Student.class);
         student.run();
     }

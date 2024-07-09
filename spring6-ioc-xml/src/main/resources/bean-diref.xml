@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:util="http://www.springframework.org/schema/util"
+       xsi:schemaLocation="http://www.springframework.org/schema/util
+       http://www.springframework.org/schema/util/spring-util.xsd
+       http://www.springframework.org/schema/beans
+       http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+    <!--
+        1 創建三個對象
+        2 注入普通類型屬性
+        3 使用util:類型 定義
+        4 在學生 bean 引入util:類型定義bean，完成map、list類型屬性注入
+    -->
+
+    <bean id="student" class="com.example.spring6.iocxml.dimap.Student">
+        <property name="studentId" value="1001"></property>
+        <property name="studentName" value="Tom"></property>
+        <!--注入list, map屬性-->
+        <property name="lessonList" ref="lessonList"></property>
+        <property name="teacherMap" ref="teacherMap"></property>
+    </bean>
+
+    <util:list id="lessonList">
+        <ref bean="lessonOne"></ref>
+        <ref bean="lessonTwo"></ref>
+    </util:list>
+
+    <util:map id="teacherMap">
+        <entry>
+            <key>
+                <value>201</value>
+            </key>
+            <ref bean="teacherOne"></ref>
+        </entry>
+        <entry>
+            <key>
+                <value>202</value>
+            </key>
+            <ref bean="teacherTwo"></ref>
+        </entry>
+    </util:map>
+    <bean id="lessonOne" class="com.example.spring6.iocxml.dimap.Lesson">
+        <property name="lessonName" value="Java開發"></property>
+    </bean>
+    <bean id="lessonTwo" class="com.example.spring6.iocxml.dimap.Lesson">
+        <property name="lessonName" value="前端開發"></property>
+    </bean>
+    <bean id="teacherOne" class="com.example.spring6.iocxml.dimap.Teacher">
+        <property name="teacherId" value="401"></property>
+        <property name="teacherName" value="Judy"></property>
+    </bean>
+    <bean id="teacherTwo" class="com.example.spring6.iocxml.dimap.Teacher">
+        <property name="teacherId" value="402"></property>
+        <property name="teacherName" value="Tom"></property>
+    </bean>
+</beans>
