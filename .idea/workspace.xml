@@ -4,37 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="d2b9ee80-f131-4bcf-a126-7b6e03ec9b4d" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/checkstyle-idea.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/spring-first/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/spring-first/src/main/java/com/example/spring6/TestUser.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/spring-first/src/main/java/com/example/spring6/User.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/spring-first/src/main/resources/bean.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/spring-first/src/main/resources/log4j2.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/spring6-ioc-xml/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/spring6-ioc-xml/src/main/java/com/example/spring6/iocxml/TestUser.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/spring6-ioc-xml/src/main/java/com/example/spring6/iocxml/User.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/spring6-ioc-xml/src/main/java/com/example/spring6/iocxml/bean/PersonDaoImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/spring6-ioc-xml/src/main/java/com/example/spring6/iocxml/bean/UserDao.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/spring6-ioc-xml/src/main/java/com/example/spring6/iocxml/bean/UserDaoImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/spring6-ioc-xml/src/main/java/com/example/spring6/iocxml/bean/UserDaoTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/spring6-ioc-xml/src/main/java/com/example/spring6/iocxml/di/Book.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/spring6-ioc-xml/src/main/java/com/example/spring6/iocxml/di/TestBook.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/spring6-ioc-xml/src/main/java/com/example/spring6/iocxml/ditest/Department.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/spring6-ioc-xml/src/main/java/com/example/spring6/iocxml/ditest/Employee.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/spring6-ioc-xml/src/main/java/com/example/spring6/iocxml/ditest/TestEmployee.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/spring6-ioc-xml/src/main/resources/bean-di.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/spring6-ioc-xml/src/main/resources/bean-diarray.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/spring6-ioc-xml/src/main/resources/bean-ditest.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/spring6-ioc-xml/src/main/resources/bean.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/spring6-ioc-xml/src/main/resources/log4j2.xml" afterDir="false" />
+    <list default="true" id="d2b9ee80-f131-4bcf-a126-7b6e03ec9b4d" name="Changes" comment="first commit">
+      <change afterPath="$PROJECT_DIR$/spring6-ioc-xml/src/main/java/com/example/spring6/iocxml/ditest/TestDepartment.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spring6-ioc-xml/src/main/resources/bean-dilist.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring6-ioc-xml/src/main/java/com/example/spring6/iocxml/ditest/Department.java" beforeDir="false" afterPath="$PROJECT_DIR$/spring6-ioc-xml/src/main/java/com/example/spring6/iocxml/ditest/Department.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -84,7 +57,7 @@
     "WebServerToolWindowFactoryState": "false",
     "git-widget-placeholder": "master",
     "jdk.selected.JAVA_MODULE": "17",
-    "last_opened_file_path": "/Users/linzhuofei/Desktop/spring6/spring6/spring6-ioc-xml/src/main/resources",
+    "last_opened_file_path": "/Users/linzhuofei/Desktop/spring6/spring6",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -105,12 +78,16 @@
 }]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$" />
       <recent name="$PROJECT_DIR$/spring6-ioc-xml/src/main/resources" />
     </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.example.spring6.iocxml.ditest" />
+    </key>
   </component>
-  <component name="RunManager" selected="Application.TestEmployee">
-    <configuration name="TestEmployee" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.example.spring6.iocxml.ditest.TestEmployee" />
+  <component name="RunManager" selected="Application.TestDepartment">
+    <configuration name="TestDepartment" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.example.spring6.iocxml.ditest.TestDepartment" />
       <module name="spring6-ioc-xml" />
       <extension name="coverage">
         <pattern>
@@ -122,12 +99,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="TestUser" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.example.spring6.iocxml.TestUser" />
+    <configuration name="TestEmployee" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.example.spring6.iocxml.ditest.TestEmployee" />
       <module name="spring6-ioc-xml" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.example.spring6.iocxml.*" />
+          <option name="PATTERN" value="com.example.spring6.iocxml.ditest.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -182,11 +159,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.TestDepartment" />
         <item itemvalue="Application.TestEmployee" />
         <item itemvalue="JUnit.TestBook.testSetter" />
         <item itemvalue="JUnit.TestBook.testConstruct" />
         <item itemvalue="Application.UserDaoTest" />
-        <item itemvalue="Application.TestUser" />
       </list>
     </recent_temporary>
   </component>
@@ -202,11 +179,24 @@
       <workItem from="1719972883889" duration="716000" />
       <workItem from="1719995465696" duration="11696000" />
       <workItem from="1720059975840" duration="1299000" />
-      <workItem from="1720400193493" duration="13325000" />
+      <workItem from="1720400193493" duration="15601000" />
     </task>
+    <task id="LOCAL-00001" summary="first commit">
+      <option name="closed" value="true" />
+      <created>1720487101565</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1720487101566</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="first commit" />
+    <option name="LAST_COMMIT_MESSAGE" value="first commit" />
   </component>
 </project>

@@ -26,5 +26,9 @@ public class Department {
 
     public void info(){
         System.out.println("部門名稱" + departmentName);
+        for (Employee employee : employeeList) {
+            System.out.println(employee.getEmployeeName());
+            System.out.println(employee.getAge());
+        }
     }
 }
