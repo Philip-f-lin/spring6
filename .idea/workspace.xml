@@ -4,9 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="d2b9ee80-f131-4bcf-a126-7b6e03ec9b4d" name="Changes" comment="注入集合類型">
-      <change beforePath="$PROJECT_DIR$/spring6-ioc-xml/src/main/java/com/example/spring6/iocxml/dimap/testStudent.java" beforeDir="false" afterPath="$PROJECT_DIR$/spring6-ioc-xml/src/main/java/com/example/spring6/iocxml/dimap/testStudent.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/spring6-ioc-xml/src/main/resources/bean-diref.xml" beforeDir="false" afterPath="$PROJECT_DIR$/spring6-ioc-xml/src/main/resources/bean-diref.xml" afterDir="false" />
+    <list default="true" id="d2b9ee80-f131-4bcf-a126-7b6e03ec9b4d" name="Changes" comment="p命名空間注入">
+      <change afterPath="$PROJECT_DIR$/spring6-ioc-xml/src/main/java/com/example/spring6/iocxml/jdbc/TestJdbc.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spring6-ioc-xml/src/main/resources/bean-jdbc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spring6-ioc-xml/src/main/resources/jdbc.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring6-ioc-xml/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/spring6-ioc-xml/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring6-ioc-xml/src/main/java/com/example/spring6/iocxml/dimap/testStudent.java" beforeDir="false" afterPath="$PROJECT_DIR$/spring6-ioc-xml/src/main/java/com/example/spring6/iocxml/dimap/TestStudent.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -17,8 +20,8 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Interface" />
-        <option value="Class" />
         <option value="spring-beans.schema" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -84,7 +87,7 @@
       <recent name="com.example.spring6.iocxml.ditest" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.testStudent">
+  <component name="RunManager" selected="JUnit.TestJdbc.demo2">
     <configuration name="TestDepartment" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.example.spring6.iocxml.ditest.TestDepartment" />
       <module name="spring6-ioc-xml" />
@@ -111,8 +114,8 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="testStudent" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.example.spring6.iocxml.dimap.testStudent" />
+    <configuration name="TestStudent" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.example.spring6.iocxml.dimap.TestStudent" />
       <module name="spring6-ioc-xml" />
       <extension name="coverage">
         <pattern>
@@ -120,22 +123,6 @@
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="TestBook.testConstruct" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="spring6-ioc-xml" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.example.spring6.iocxml.di.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.example.spring6.iocxml.di" />
-      <option name="MAIN_CLASS_NAME" value="com.example.spring6.iocxml.di.TestBook" />
-      <option name="METHOD_NAME" value="testConstruct" />
-      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -156,13 +143,29 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="TestJdbc.demo2" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="spring6-ioc-xml" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.example.spring6.iocxml.jdbc.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.example.spring6.iocxml.jdbc" />
+      <option name="MAIN_CLASS_NAME" value="com.example.spring6.iocxml.jdbc.TestJdbc" />
+      <option name="METHOD_NAME" value="demo2" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.testStudent" />
+        <item itemvalue="JUnit.TestJdbc.demo2" />
+        <item itemvalue="Application.TestStudent" />
         <item itemvalue="Application.TestDepartment" />
         <item itemvalue="Application.TestEmployee" />
         <item itemvalue="JUnit.TestBook.testSetter" />
-        <item itemvalue="JUnit.TestBook.testConstruct" />
       </list>
     </recent_temporary>
   </component>
@@ -178,7 +181,7 @@
       <workItem from="1719972883889" duration="716000" />
       <workItem from="1719995465696" duration="11696000" />
       <workItem from="1720059975840" duration="1299000" />
-      <workItem from="1720400193493" duration="21835000" />
+      <workItem from="1720400193493" duration="23047000" />
     </task>
     <task id="LOCAL-00001" summary="first commit">
       <option name="closed" value="true" />
@@ -212,7 +215,15 @@
       <option name="project" value="LOCAL" />
       <updated>1720504710811</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="p命名空間注入">
+      <option name="closed" value="true" />
+      <created>1720509305892</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1720509305892</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -223,6 +234,7 @@
     <MESSAGE value="注入List類型" />
     <MESSAGE value="注入Map類型" />
     <MESSAGE value="注入集合類型" />
-    <option name="LAST_COMMIT_MESSAGE" value="注入集合類型" />
+    <MESSAGE value="p命名空間注入" />
+    <option name="LAST_COMMIT_MESSAGE" value="p命名空間注入" />
   </component>
 </project>
