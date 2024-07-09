@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+    <!--
+    第一種方式：引入外部bean
+        1 創建兩個類對象：department, employee
+        2 在employee的bean標籤裡面，使用property引入department的bean
+    -->
+    <!--<bean id="department" class="com.example.spring6.iocxml.ditest.Department">
+        <property name="departmentName" value="Apple"></property>
+    </bean>
+    <bean id="employee" class="com.example.spring6.iocxml.ditest.Employee">
+        &lt;!&ndash;注入對象類型屬性
+            private Department department;
+        &ndash;&gt;
+        &lt;!&ndash;要把bean拿過來，使用ref這個屬性，要注意ref的值，要跟上面創建department bean的id要一致&ndash;&gt;
+        &lt;!&ndash;ref表示引入，引入誰，把department這個對象注入進來&ndash;&gt;
+        <property name="department" ref="department"></property>
+        &lt;!&ndash;普通屬性注入&ndash;&gt;
+        <property name="employeeName" value="Philip"></property>
+        <property name="age" value="18"></property>
+    </bean>-->
+
+
+    <!--第二種方式：內部bean注入-->
+
+    <!--<bean id="employee2" class="com.example.spring6.iocxml.ditest.Employee">
+        &lt;!&ndash;普通屬性注入&ndash;&gt;
+        <property name="employeeName" value="John"></property>
+        <property name="age" value="30"></property>
+        &lt;!&ndash;內部bean&ndash;&gt;
+        <property name="department">
+            <bean id="department2" class="com.example.spring6.iocxml.ditest.Department">
+                <property name="departmentName" value="Amazon"></property>
+            </bean>
+        </property>
+    </bean>-->
+
+    <!--第三種方式：级联属性赋值-->
+    <bean id="department3" class="com.example.spring6.iocxml.ditest.Department">
+        <property name="departmentName" value="Tesla"></property>
+    </bean>
+
+    <bean id="employee3" class="com.example.spring6.iocxml.ditest.Employee">
+        <property name="employeeName" value="Cindy"></property>
+        <property name="age" value="40"></property>
+        <property name="department" ref="department3"></property>
+        <property name="department.departmentName" value="Google"></property>
+    </bean>
+</beans>

@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:util="http://www.springframework.org/schema/util"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd http://www.springframework.org/schema/util https://www.springframework.org/schema/util/spring-util.xsd">
+
+    <!--1 set 方法注入-->
+    <!-- <property> => 這個標籤是調用對應的 set方法 進行注入-->
+    <bean id="book" class="com.example.spring6.iocxml.di.Book">
+        <property name="bookName" value="前端開發"></property>
+        <property name="author" value="Philip"></property>
+<!--        <property name="others">-->
+<!--            <null/>-->
+<!--        </property>-->
+        <!-- &lt; 意思是=> '<' -->
+        <!-- &gt; 意思是=> '>' -->
+        <!--<property name="others" value="&lt;&gt;"></property>-->
+        <property name="others">
+            <value><![CDATA[a < b]]></value>
+        </property>
+    </bean>
+
+    <!--2 構造方法注入-->
+    <!-- <constructor-arg> => 這個標籤是調用對應的 構造方法 進行注入-->
+    <bean id="bookConstruct" class="com.example.spring6.iocxml.di.Book">
+        <constructor-arg name="bookName" value="後端開發"></constructor-arg>
+        <constructor-arg name="author" value="Philip"></constructor-arg>
+    </bean>
+</beans>
