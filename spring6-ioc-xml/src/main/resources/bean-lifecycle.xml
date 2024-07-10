@@ -7,4 +7,7 @@
           scope="singleton" init-method="initMethod" destroy-method="destroyMethod">
         <property name="name" value="Lucy"></property>
     </bean>
+
+    <!-- bean的后置处理器要放入IOC容器才能生效 -->
+    <bean id="myBeanProcessor" class="com.example.spring6.iocxml.lifecycle.MyBeanProcessor"/>
 </beans>
