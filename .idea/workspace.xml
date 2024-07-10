@@ -4,11 +4,15 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="d2b9ee80-f131-4bcf-a126-7b6e03ec9b4d" name="Changes" comment="bean的完整生命週期">
-      <change afterPath="$PROJECT_DIR$/spring6-ioc-xml/src/main/java/com/example/spring6/iocxml/factorybean/MyFactoryBean.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/spring6-ioc-xml/src/main/java/com/example/spring6/iocxml/factorybean/TestUser.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/spring6-ioc-xml/src/main/java/com/example/spring6/iocxml/factorybean/User.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/spring6-ioc-xml/src/main/resources/bean-factorybean.xml" afterDir="false" />
+    <list default="true" id="d2b9ee80-f131-4bcf-a126-7b6e03ec9b4d" name="Changes" comment="FactoryBean">
+      <change afterPath="$PROJECT_DIR$/spring6-ioc-xml/src/main/java/com/example/spring6/iocxml/auto/TestUser.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spring6-ioc-xml/src/main/java/com/example/spring6/iocxml/auto/controller/UserController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spring6-ioc-xml/src/main/java/com/example/spring6/iocxml/auto/dao/UserDao.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spring6-ioc-xml/src/main/java/com/example/spring6/iocxml/auto/dao/UserDaoImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spring6-ioc-xml/src/main/java/com/example/spring6/iocxml/auto/service/UserService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spring6-ioc-xml/src/main/java/com/example/spring6/iocxml/auto/service/UserServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spring6-ioc-xml/src/main/resources/bean-auto.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -86,7 +90,7 @@
       <recent name="com.example.spring6.iocxml.ditest" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.com.example.spring6.iocxml.factorybean.TestUser">
+  <component name="RunManager" selected="Application.com.example.spring6.iocxml.auto.TestUser">
     <configuration name="TestOrders" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.example.spring6.iocxml.scope.TestOrders" />
       <module name="spring6-ioc-xml" />
@@ -100,12 +104,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="TestStudent" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.example.spring6.iocxml.dimap.TestStudent" />
+    <configuration name="TestUser" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.example.spring6.iocxml.lifecycle.TestUser" />
       <module name="spring6-ioc-xml" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.example.spring6.iocxml.dimap.*" />
+          <option name="PATTERN" value="com.example.spring6.iocxml.lifecycle.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -113,12 +117,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="TestUser" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.example.spring6.iocxml.lifecycle.TestUser" />
+    <configuration name="com.example.spring6.iocxml.auto.TestUser" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.example.spring6.iocxml.auto.TestUser" />
       <module name="spring6-ioc-xml" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.example.spring6.iocxml.lifecycle.*" />
+          <option name="PATTERN" value="com.example.spring6.iocxml.auto.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -157,11 +161,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.com.example.spring6.iocxml.auto.TestUser" />
         <item itemvalue="Application.com.example.spring6.iocxml.factorybean.TestUser" />
         <item itemvalue="Application.TestOrders" />
         <item itemvalue="Application.TestUser" />
         <item itemvalue="JUnit.TestJdbc.demo2" />
-        <item itemvalue="Application.TestStudent" />
       </list>
     </recent_temporary>
   </component>
@@ -178,7 +182,7 @@
       <workItem from="1719995465696" duration="11696000" />
       <workItem from="1720059975840" duration="1299000" />
       <workItem from="1720400193493" duration="23847000" />
-      <workItem from="1720578486250" duration="3761000" />
+      <workItem from="1720578486250" duration="8517000" />
     </task>
     <task id="LOCAL-00001" summary="first commit">
       <option name="closed" value="true" />
@@ -268,7 +272,15 @@
       <option name="project" value="LOCAL" />
       <updated>1720593165083</updated>
     </task>
-    <option name="localTasksCounter" value="12" />
+    <task id="LOCAL-00012" summary="FactoryBean">
+      <option name="closed" value="true" />
+      <created>1720593760860</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1720593760860</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -295,6 +307,7 @@
     <MESSAGE value="bean的作用域" />
     <MESSAGE value="bean的生命週期" />
     <MESSAGE value="bean的完整生命週期" />
-    <option name="LAST_COMMIT_MESSAGE" value="bean的完整生命週期" />
+    <MESSAGE value="FactoryBean" />
+    <option name="LAST_COMMIT_MESSAGE" value="FactoryBean" />
   </component>
 </project>
