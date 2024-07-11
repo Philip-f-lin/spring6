@@ -4,15 +4,14 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="d2b9ee80-f131-4bcf-a126-7b6e03ec9b4d" name="Changes" comment="FactoryBean">
-      <change afterPath="$PROJECT_DIR$/spring6-ioc-xml/src/main/java/com/example/spring6/iocxml/auto/TestUser.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/spring6-ioc-xml/src/main/java/com/example/spring6/iocxml/auto/controller/UserController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/spring6-ioc-xml/src/main/java/com/example/spring6/iocxml/auto/dao/UserDao.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/spring6-ioc-xml/src/main/java/com/example/spring6/iocxml/auto/dao/UserDaoImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/spring6-ioc-xml/src/main/java/com/example/spring6/iocxml/auto/service/UserService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/spring6-ioc-xml/src/main/java/com/example/spring6/iocxml/auto/service/UserServiceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/spring6-ioc-xml/src/main/resources/bean-auto.xml" afterDir="false" />
+    <list default="true" id="d2b9ee80-f131-4bcf-a126-7b6e03ec9b4d" name="Changes" comment="基於xml自動裝配">
+      <change afterPath="$PROJECT_DIR$/spring6-ioc-annotation/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spring6-ioc-annotation/src/main/java/com/philip/spring6/bean/TestUser.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spring6-ioc-annotation/src/main/java/com/philip/spring6/bean/User.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spring6-ioc-annotation/src/main/resources/bean.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spring6-ioc-annotation/src/main/resources/log4j2.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -54,35 +53,36 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
-    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
-    &quot;jdk.selected.JAVA_MODULE&quot;: &quot;17&quot;,
-    &quot;last_opened_file_path&quot;: &quot;/Users/linzhuofei/Desktop/spring6/spring6&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
-    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
-    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;MavenSettings&quot;,
-    &quot;spring.configuration.checksum&quot;: &quot;53f7ffd5859c7208b952878a1839922e&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "git-widget-placeholder": "master",
+    "jdk.selected.JAVA_MODULE": "17",
+    "last_opened_file_path": "/Users/linzhuofei/Desktop/spring6/spring6/spring6-ioc-annotation/src/main/resources",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "project.structure.last.edited": "Modules",
+    "project.structure.proportion": "0.15",
+    "project.structure.side.proportion": "0.2",
+    "settings.editor.selected.configurable": "MavenSettings",
+    "spring.configuration.checksum": "53f7ffd5859c7208b952878a1839922e",
+    "vue.rearranger.settings.migration": "true"
   },
-  &quot;keyToStringList&quot;: {
-    &quot;DatabaseDriversLRU&quot;: [
-      &quot;mysql&quot;
+  "keyToStringList": {
+    "DatabaseDriversLRU": [
+      "mysql"
     ]
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/spring6-ioc-annotation/src/main/resources" />
       <recent name="$PROJECT_DIR$" />
       <recent name="$PROJECT_DIR$/spring6-ioc-xml/src/main/resources" />
     </key>
@@ -90,7 +90,7 @@
       <recent name="com.example.spring6.iocxml.ditest" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.com.example.spring6.iocxml.auto.TestUser">
+  <component name="RunManager" selected="Application.com.philip.spring6.bean.TestUser">
     <configuration name="TestOrders" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.example.spring6.iocxml.scope.TestOrders" />
       <module name="spring6-ioc-xml" />
@@ -143,29 +143,26 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="TestJdbc.demo2" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="spring6-ioc-xml" />
+    <configuration name="com.philip.spring6.bean.TestUser" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.philip.spring6.bean.TestUser" />
+      <module name="spring6-ioc-annotation" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.example.spring6.iocxml.jdbc.*" />
+          <option name="PATTERN" value="com.philip.spring6.bean.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="com.example.spring6.iocxml.jdbc" />
-      <option name="MAIN_CLASS_NAME" value="com.example.spring6.iocxml.jdbc.TestJdbc" />
-      <option name="METHOD_NAME" value="demo2" />
-      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.com.philip.spring6.bean.TestUser" />
         <item itemvalue="Application.com.example.spring6.iocxml.auto.TestUser" />
         <item itemvalue="Application.com.example.spring6.iocxml.factorybean.TestUser" />
         <item itemvalue="Application.TestOrders" />
         <item itemvalue="Application.TestUser" />
-        <item itemvalue="JUnit.TestJdbc.demo2" />
       </list>
     </recent_temporary>
   </component>
@@ -182,7 +179,7 @@
       <workItem from="1719995465696" duration="11696000" />
       <workItem from="1720059975840" duration="1299000" />
       <workItem from="1720400193493" duration="23847000" />
-      <workItem from="1720578486250" duration="8517000" />
+      <workItem from="1720578486250" duration="11451000" />
     </task>
     <task id="LOCAL-00001" summary="first commit">
       <option name="closed" value="true" />
@@ -280,7 +277,15 @@
       <option name="project" value="LOCAL" />
       <updated>1720593760860</updated>
     </task>
-    <option name="localTasksCounter" value="13" />
+    <task id="LOCAL-00013" summary="基於xml自動裝配">
+      <option name="closed" value="true" />
+      <created>1720606777793</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1720606777793</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -308,6 +313,7 @@
     <MESSAGE value="bean的生命週期" />
     <MESSAGE value="bean的完整生命週期" />
     <MESSAGE value="FactoryBean" />
-    <option name="LAST_COMMIT_MESSAGE" value="FactoryBean" />
+    <MESSAGE value="基於xml自動裝配" />
+    <option name="LAST_COMMIT_MESSAGE" value="基於xml自動裝配" />
   </component>
 </project>
