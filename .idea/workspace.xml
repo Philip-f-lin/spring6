@@ -4,14 +4,13 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="d2b9ee80-f131-4bcf-a126-7b6e03ec9b4d" name="Changes" comment="基於xml自動裝配">
-      <change afterPath="$PROJECT_DIR$/spring6-ioc-annotation/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/spring6-ioc-annotation/src/main/java/com/philip/spring6/bean/TestUser.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/spring6-ioc-annotation/src/main/java/com/philip/spring6/bean/User.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/spring6-ioc-annotation/src/main/resources/bean.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/spring6-ioc-annotation/src/main/resources/log4j2.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+    <list default="true" id="d2b9ee80-f131-4bcf-a126-7b6e03ec9b4d" name="Changes" comment="基於註解管理Bean-創建Bean對象">
+      <change afterPath="$PROJECT_DIR$/spring6-ioc-annotation/src/main/java/com/philip/spring6/autowired/TestUserController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spring6-ioc-annotation/src/main/java/com/philip/spring6/autowired/controller/UserController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spring6-ioc-annotation/src/main/java/com/philip/spring6/autowired/dao/UserDao.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spring6-ioc-annotation/src/main/java/com/philip/spring6/autowired/dao/UserDaoImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spring6-ioc-annotation/src/main/java/com/philip/spring6/autowired/service/UserService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spring6-ioc-annotation/src/main/java/com/philip/spring6/autowired/service/UserServiceImpl.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -21,8 +20,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Interface" />
         <option value="spring-beans.schema" />
+        <option value="Interface" />
         <option value="Class" />
       </list>
     </option>
@@ -90,7 +89,7 @@
       <recent name="com.example.spring6.iocxml.ditest" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.com.philip.spring6.bean.TestUser">
+  <component name="RunManager" selected="Application.TestUserController">
     <configuration name="TestOrders" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.example.spring6.iocxml.scope.TestOrders" />
       <module name="spring6-ioc-xml" />
@@ -104,12 +103,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="TestUser" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.example.spring6.iocxml.lifecycle.TestUser" />
-      <module name="spring6-ioc-xml" />
+    <configuration name="TestUserController" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.philip.spring6.autowired.TestUserController" />
+      <module name="spring6-ioc-annotation" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.example.spring6.iocxml.lifecycle.*" />
+          <option name="PATTERN" value="com.philip.spring6.autowired.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -158,11 +157,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.TestUserController" />
         <item itemvalue="Application.com.philip.spring6.bean.TestUser" />
         <item itemvalue="Application.com.example.spring6.iocxml.auto.TestUser" />
         <item itemvalue="Application.com.example.spring6.iocxml.factorybean.TestUser" />
         <item itemvalue="Application.TestOrders" />
-        <item itemvalue="Application.TestUser" />
       </list>
     </recent_temporary>
   </component>
@@ -179,7 +178,7 @@
       <workItem from="1719995465696" duration="11696000" />
       <workItem from="1720059975840" duration="1299000" />
       <workItem from="1720400193493" duration="23847000" />
-      <workItem from="1720578486250" duration="11451000" />
+      <workItem from="1720578486250" duration="13046000" />
     </task>
     <task id="LOCAL-00001" summary="first commit">
       <option name="closed" value="true" />
@@ -285,7 +284,15 @@
       <option name="project" value="LOCAL" />
       <updated>1720606777793</updated>
     </task>
-    <option name="localTasksCounter" value="14" />
+    <task id="LOCAL-00014" summary="基於註解管理Bean-創建Bean對象">
+      <option name="closed" value="true" />
+      <created>1720671173332</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1720671173332</updated>
+    </task>
+    <option name="localTasksCounter" value="15" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -314,6 +321,7 @@
     <MESSAGE value="bean的完整生命週期" />
     <MESSAGE value="FactoryBean" />
     <MESSAGE value="基於xml自動裝配" />
-    <option name="LAST_COMMIT_MESSAGE" value="基於xml自動裝配" />
+    <MESSAGE value="基於註解管理Bean-創建Bean對象" />
+    <option name="LAST_COMMIT_MESSAGE" value="基於註解管理Bean-創建Bean對象" />
   </component>
 </project>
