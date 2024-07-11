@@ -4,7 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="d2b9ee80-f131-4bcf-a126-7b6e03ec9b4d" name="Changes" comment="基於註解管理Bean-@Autowired注入（上）">
+    <list default="true" id="d2b9ee80-f131-4bcf-a126-7b6e03ec9b4d" name="Changes" comment="基於註解管理Bean-@Autowired注入（中）">
+      <change afterPath="$PROJECT_DIR$/spring6-ioc-annotation/src/main/java/com/philip/spring6/autowired/dao/UserRedisDaoImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/spring6-ioc-annotation/src/main/java/com/philip/spring6/autowired/controller/UserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/spring6-ioc-annotation/src/main/java/com/philip/spring6/autowired/controller/UserController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/spring6-ioc-annotation/src/main/java/com/philip/spring6/autowired/service/UserServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/spring6-ioc-annotation/src/main/java/com/philip/spring6/autowired/service/UserServiceImpl.java" afterDir="false" />
     </list>
@@ -174,7 +176,7 @@
       <workItem from="1719995465696" duration="11696000" />
       <workItem from="1720059975840" duration="1299000" />
       <workItem from="1720400193493" duration="23847000" />
-      <workItem from="1720578486250" duration="13408000" />
+      <workItem from="1720578486250" duration="15532000" />
     </task>
     <task id="LOCAL-00001" summary="first commit">
       <option name="closed" value="true" />
@@ -296,7 +298,15 @@
       <option name="project" value="LOCAL" />
       <updated>1720676986969</updated>
     </task>
-    <option name="localTasksCounter" value="16" />
+    <task id="LOCAL-00016" summary="基於註解管理Bean-@Autowired注入（中）">
+      <option name="closed" value="true" />
+      <created>1720677621769</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1720677621769</updated>
+    </task>
+    <option name="localTasksCounter" value="17" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -327,6 +337,7 @@
     <MESSAGE value="基於xml自動裝配" />
     <MESSAGE value="基於註解管理Bean-創建Bean對象" />
     <MESSAGE value="基於註解管理Bean-@Autowired注入（上）" />
-    <option name="LAST_COMMIT_MESSAGE" value="基於註解管理Bean-@Autowired注入（上）" />
+    <MESSAGE value="基於註解管理Bean-@Autowired注入（中）" />
+    <option name="LAST_COMMIT_MESSAGE" value="基於註解管理Bean-@Autowired注入（中）" />
   </component>
 </project>

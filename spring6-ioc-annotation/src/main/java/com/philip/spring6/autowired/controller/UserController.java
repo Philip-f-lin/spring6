@@ -28,9 +28,16 @@ public class UserController {
     }*/
 
     // 第四種方式，形參上注入
-    private UserService userService;
+    /*private UserService userService;
 
     public UserController(@Autowired UserService userService) {
+        this.userService = userService;
+    }*/
+
+    // 第五種方式，只有一個有參數構造函數，無註解
+    private UserService userService;
+
+    public UserController(UserService userService) {
         this.userService = userService;
     }
 

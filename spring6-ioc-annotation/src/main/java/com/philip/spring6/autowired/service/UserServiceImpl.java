@@ -2,6 +2,7 @@ package com.philip.spring6.autowired.service;
 
 import com.philip.spring6.autowired.dao.UserDao;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.stereotype.Service;
 
 @Service
@@ -28,11 +29,16 @@ public class UserServiceImpl implements UserService{
     }*/
 
     // 第四種方式，形參上注入
-    private UserDao userDao;
+    /*private UserDao userDao;
 
     public UserServiceImpl(@Autowired UserDao userDao) {
         this.userDao = userDao;
-    }
+    }*/
+
+    // 最後一種方式：兩個註解，根據名稱注入
+    @Autowired
+    @Qualifier(value = "userRedisDaoImpl")
+    private UserDao userDao;
 
     @Override
     public void add() {
