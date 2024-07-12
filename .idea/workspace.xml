@@ -4,10 +4,19 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="d2b9ee80-f131-4bcf-a126-7b6e03ec9b4d" name="Changes" comment="手寫IOC-回顧Java反射(中)">
+    <list default="true" id="d2b9ee80-f131-4bcf-a126-7b6e03ec9b4d" name="Changes" comment="手寫IOC-回顧Java反射(下)">
+      <change afterPath="$PROJECT_DIR$/philip-spring/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/philip-spring/src/main/java/com/philip/anno/Bean.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/philip-spring/src/main/java/com/philip/anno/Di.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/philip-spring/src/main/java/com/philip/bean/AnnotationApplicationContext.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/philip-spring/src/main/java/com/philip/bean/ApplicationContext.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/philip-spring/src/main/java/com/philip/dao/UserDao.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/philip-spring/src/main/java/com/philip/dao/impl/UserDaoImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/philip-spring/src/main/java/com/philip/service/UserService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/philip-spring/src/main/java/com/philip/service/impl/UserServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/spring6-reflect/src/main/java/com/philip/reflect/Car.java" beforeDir="false" afterPath="$PROJECT_DIR$/spring6-reflect/src/main/java/com/philip/reflect/Car.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/spring6-reflect/src/main/java/com/philip/reflect/TestCar.java" beforeDir="false" afterPath="$PROJECT_DIR$/spring6-reflect/src/main/java/com/philip/reflect/TestCar.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -18,6 +27,7 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="spring-beans.schema" />
+        <option value="AnnotationType" />
         <option value="Interface" />
         <option value="Class" />
       </list>
@@ -88,13 +98,13 @@
       <recent name="com.example.spring6.iocxml.ditest" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.TestCar.test04">
-    <configuration name="TestUserControllerAnno" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.philip.spring6.config.TestUserControllerAnno" />
-      <module name="spring6-ioc-annotation" />
+  <component name="RunManager" selected="Application.AnnotationApplicationContext">
+    <configuration name="AnnotationApplicationContext" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.philip.bean.AnnotationApplicationContext" />
+      <module name="philip-spring" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.philip.spring6.config.*" />
+          <option name="PATTERN" value="com.philip.bean.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -102,12 +112,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="com.philip.spring6.resource.TestUserController" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.philip.spring6.resource.TestUserController" />
+    <configuration name="TestUserControllerAnno" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.philip.spring6.config.TestUserControllerAnno" />
       <module name="spring6-ioc-annotation" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.philip.spring6.resource.*" />
+          <option name="PATTERN" value="com.philip.spring6.config.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -165,11 +175,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.AnnotationApplicationContext" />
         <item itemvalue="JUnit.TestCar.test04" />
         <item itemvalue="JUnit.TestCar.test03" />
         <item itemvalue="JUnit.TestCar.Test02" />
         <item itemvalue="Application.TestUserControllerAnno" />
-        <item itemvalue="Application.com.philip.spring6.resource.TestUserController" />
       </list>
     </recent_temporary>
   </component>
@@ -187,7 +197,7 @@
       <workItem from="1720059975840" duration="1299000" />
       <workItem from="1720400193493" duration="23847000" />
       <workItem from="1720578486250" duration="18069000" />
-      <workItem from="1720689678866" duration="8489000" />
+      <workItem from="1720689678866" duration="12909000" />
     </task>
     <task id="LOCAL-00001" summary="first commit">
       <option name="closed" value="true" />
@@ -357,7 +367,15 @@
       <option name="project" value="LOCAL" />
       <updated>1720764709860</updated>
     </task>
-    <option name="localTasksCounter" value="22" />
+    <task id="LOCAL-00022" summary="手寫IOC-回顧Java反射(下)">
+      <option name="closed" value="true" />
+      <created>1720766805651</created>
+      <option name="number" value="00022" />
+      <option name="presentableId" value="LOCAL-00022" />
+      <option name="project" value="LOCAL" />
+      <updated>1720766805651</updated>
+    </task>
+    <option name="localTasksCounter" value="23" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -405,6 +423,7 @@
     <MESSAGE value="基於註解管理Bean-全註解開發" />
     <MESSAGE value="手寫IOC-回顧Java反射(上)" />
     <MESSAGE value="手寫IOC-回顧Java反射(中)" />
-    <option name="LAST_COMMIT_MESSAGE" value="手寫IOC-回顧Java反射(中)" />
+    <MESSAGE value="手寫IOC-回顧Java反射(下)" />
+    <option name="LAST_COMMIT_MESSAGE" value="手寫IOC-回顧Java反射(下)" />
   </component>
 </project>
