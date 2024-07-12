@@ -4,12 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="d2b9ee80-f131-4bcf-a126-7b6e03ec9b4d" name="Changes" comment="基於註解管理Bean-@Resource注入">
-      <change afterPath="$PROJECT_DIR$/spring6-ioc-annotation/src/main/java/com/philip/spring6/config/SpringConfig.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/spring6-ioc-annotation/src/main/java/com/philip/spring6/config/TestUserControllerAnno.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/spring6-ioc-annotation/src/main/java/com/philip/spring6/resource/service/UserServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/spring6-ioc-annotation/src/main/java/com/philip/spring6/resource/service/UserServiceImpl.java" afterDir="false" />
-    </list>
+    <list default="true" id="d2b9ee80-f131-4bcf-a126-7b6e03ec9b4d" name="Changes" comment="基於註解管理Bean-全註解開發" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -179,7 +174,7 @@
       <workItem from="1720059975840" duration="1299000" />
       <workItem from="1720400193493" duration="23847000" />
       <workItem from="1720578486250" duration="18069000" />
-      <workItem from="1720689678866" duration="3516000" />
+      <workItem from="1720689678866" duration="4451000" />
     </task>
     <task id="LOCAL-00001" summary="first commit">
       <option name="closed" value="true" />
@@ -325,11 +320,30 @@
       <option name="project" value="LOCAL" />
       <updated>1720690875493</updated>
     </task>
-    <option name="localTasksCounter" value="19" />
+    <task id="LOCAL-00019" summary="基於註解管理Bean-全註解開發">
+      <option name="closed" value="true" />
+      <created>1720761728344</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1720761728344</updated>
+    </task>
+    <option name="localTasksCounter" value="20" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.History.Properties">
+    <option name="COLUMN_ID_ORDER">
+      <list>
+        <option value="Default.Root" />
+        <option value="Default.Author" />
+        <option value="Default.Date" />
+        <option value="Default.Subject" />
+        <option value="Space.CommitStatus" />
+      </list>
+    </option>
   </component>
   <component name="Vcs.Log.Tabs.Properties">
     <option name="TAB_STATES">
@@ -359,6 +373,7 @@
     <MESSAGE value="基於註解管理Bean-@Autowired注入（中）" />
     <MESSAGE value="基於註解管理Bean-@Autowired注入（下）" />
     <MESSAGE value="基於註解管理Bean-@Resource注入" />
-    <option name="LAST_COMMIT_MESSAGE" value="基於註解管理Bean-@Resource注入" />
+    <MESSAGE value="基於註解管理Bean-全註解開發" />
+    <option name="LAST_COMMIT_MESSAGE" value="基於註解管理Bean-全註解開發" />
   </component>
 </project>
