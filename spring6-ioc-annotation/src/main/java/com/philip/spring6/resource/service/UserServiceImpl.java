@@ -1,6 +1,7 @@
 package com.philip.spring6.resource.service;
 
-import com.philip.spring6.autowired.dao.UserDao;
+
+import com.philip.spring6.resource.dao.UserDao;
 import jakarta.annotation.Resource;
 import org.springframework.stereotype.Service;
 
