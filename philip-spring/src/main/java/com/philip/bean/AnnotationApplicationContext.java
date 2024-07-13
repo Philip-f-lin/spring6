@@ -44,27 +44,54 @@ public class AnnotationApplicationContext implements ApplicationContext{
     // 包掃描過程，實例化
     private static void loadBean(File file) {
         //1 判斷是否是個文件夾
+        if(file.isDirectory()){
+            //2 獲取文件夾內所有內容
+            File[] listedFiles = file.listFiles();
+            //3 如果文件夾裡面為空，直接返回
+            if (listedFiles == null || listedFiles.length == 0){
+                return;
+            }
+            //4 如果文件夾不為空，遍歷文件夾中所有內容
+            for (File childrenFile : listedFiles) {
+                //4.1 遍歷得到每個File對象，繼續判斷，如果還是文件夾，遞歸
+                if(childrenFile.isDirectory()){
+                    loadBean(childrenFile);
+                }else {
+                    //4.2 遍歷得到File對象不是文件夾，是文件時
+                    //4.3 得到包路徑+類名稱部分 => 字符串截取
+                    String pathWithClass = childrenFile.getAbsolutePath().substring(rootPath.length() - 1);
+                    //4.4 判斷當前文件類型是否.class
+                    if(pathWithClass.contains(".class")){
+                        //4.5 如果是.class類型，把路徑/替換成.   把.class去掉
+                        // ex: com.philip.spring6.service.UserServiceImpl
+                        pathWithClass.replaceAll("//", ".").replaceAll(".class", "");
+                        //4.6 判斷類上面是否有註解，@Bean，如果有實例化過程
+                        //4.6.1 獲取類的class
 
-        //2 獲取文件夾內所有內容
+                        //4.6.2 判斷不是接口
 
-        //3 如果文件夾裡面為空，直接返回
+                        //4.7 把對象實例化後，放到map集合beanFactory
+                    }
 
-        //4 如果文件夾不為空，遍歷文件夾中所有內容
 
-        //4.1 遍歷得到每個File對象，繼續判斷，如果還是文件夾，遞歸
+                }
+            }
 
-        //4.2 遍歷得到File對象不是文件夾，是文件時
+        }
 
-        //4.3 得到包路徑+類名稱部分 => 字符串截取
 
-        //4.4 判斷當前文件類型是否.class
 
-        //4.5 如果是.class類型，把路徑/替換成.   把.class去掉
-        // ex: com.philip.spring6.service.UserServiceImpl
 
-        //4.6 判斷類上面是否有註解，@Bean，如果有實例化過程
 
-        //4.7 把對象實例化後，放到map集合beanFactory
+
+
+
+
+
+
+
+
+
     }
 
     public static void main(String[] args) throws IOException {

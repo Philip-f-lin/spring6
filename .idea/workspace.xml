@@ -4,19 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="d2b9ee80-f131-4bcf-a126-7b6e03ec9b4d" name="Changes" comment="手寫IOC-回顧Java反射(下)">
-      <change afterPath="$PROJECT_DIR$/philip-spring/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/philip-spring/src/main/java/com/philip/anno/Bean.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/philip-spring/src/main/java/com/philip/anno/Di.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/philip-spring/src/main/java/com/philip/bean/AnnotationApplicationContext.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/philip-spring/src/main/java/com/philip/bean/ApplicationContext.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/philip-spring/src/main/java/com/philip/dao/UserDao.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/philip-spring/src/main/java/com/philip/dao/impl/UserDaoImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/philip-spring/src/main/java/com/philip/service/UserService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/philip-spring/src/main/java/com/philip/service/impl/UserServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+    <list default="true" id="d2b9ee80-f131-4bcf-a126-7b6e03ec9b4d" name="Changes" comment="手寫IOC-實現Bean創建（上、中）">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/philip-spring/src/main/java/com/philip/bean/AnnotationApplicationContext.java" beforeDir="false" afterPath="$PROJECT_DIR$/philip-spring/src/main/java/com/philip/bean/AnnotationApplicationContext.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -77,7 +67,7 @@
     "project.structure.proportion": "0.15",
     "project.structure.side.proportion": "0.2",
     "settings.editor.selected.configurable": "MavenSettings",
-    "spring.configuration.checksum": "b02f5d2ec6e59cbc9bf92a6e80e69d52",
+    "spring.configuration.checksum": "72e3f91c1fcbd34c62b9c6afccd1a31d",
     "vue.rearranger.settings.migration": "true"
   },
   "keyToStringList": {
@@ -197,7 +187,8 @@
       <workItem from="1720059975840" duration="1299000" />
       <workItem from="1720400193493" duration="23847000" />
       <workItem from="1720578486250" duration="18069000" />
-      <workItem from="1720689678866" duration="12909000" />
+      <workItem from="1720689678866" duration="14658000" />
+      <workItem from="1720868542802" duration="1359000" />
     </task>
     <task id="LOCAL-00001" summary="first commit">
       <option name="closed" value="true" />
@@ -375,7 +366,15 @@
       <option name="project" value="LOCAL" />
       <updated>1720766805651</updated>
     </task>
-    <option name="localTasksCounter" value="23" />
+    <task id="LOCAL-00023" summary="手寫IOC-實現Bean創建（上、中）">
+      <option name="closed" value="true" />
+      <created>1720777420735</created>
+      <option name="number" value="00023" />
+      <option name="presentableId" value="LOCAL-00023" />
+      <option name="project" value="LOCAL" />
+      <updated>1720777420735</updated>
+    </task>
+    <option name="localTasksCounter" value="24" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -424,6 +423,7 @@
     <MESSAGE value="手寫IOC-回顧Java反射(上)" />
     <MESSAGE value="手寫IOC-回顧Java反射(中)" />
     <MESSAGE value="手寫IOC-回顧Java反射(下)" />
-    <option name="LAST_COMMIT_MESSAGE" value="手寫IOC-回顧Java反射(下)" />
+    <MESSAGE value="手寫IOC-實現Bean創建（上、中）" />
+    <option name="LAST_COMMIT_MESSAGE" value="手寫IOC-實現Bean創建（上、中）" />
   </component>
 </project>
