@@ -1,7 +1,10 @@
 package com.philip.bean;
 
+import com.philip.anno.Bean;
+
 import java.io.File;
 import java.io.IOException;
+import java.lang.annotation.Annotation;
 import java.net.URL;
 import java.net.URLDecoder;
 import java.util.Enumeration;
@@ -20,8 +23,7 @@ public class AnnotationApplicationContext implements ApplicationContext{
 
     // 創建有參數構造，傳遞包路徑，設置包掃描規則
     // 當前包及其子包，哪個類有@Bean註解，把這個類通過反射實例化
-    //public AnnotationApplicationContext(String basePackage) throws IOException {
-    public static void AnnotationApplicationContext1(String basePackage) throws IOException {
+    public AnnotationApplicationContext(String basePackage) throws Exception {
         // com.philip
         // 1 把.替換成/
         String packagePath = basePackage.replaceAll("\\.", "/");
@@ -42,7 +44,7 @@ public class AnnotationApplicationContext implements ApplicationContext{
         }
     }
     // 包掃描過程，實例化
-    private static void loadBean(File file) {
+    private void loadBean(File file) throws Exception {
         //1 判斷是否是個文件夾
         if(file.isDirectory()){
             //2 獲取文件夾內所有內容
@@ -64,37 +66,33 @@ public class AnnotationApplicationContext implements ApplicationContext{
                     if(pathWithClass.contains(".class")){
                         //4.5 如果是.class類型，把路徑/替換成.   把.class去掉
                         // ex: com.philip.spring6.service.UserServiceImpl
-                        pathWithClass.replaceAll("//", ".").replaceAll(".class", "");
+                        String allName = pathWithClass.replaceAll("/", ".").replace(".class", "");
+                        if (allName.startsWith(".")) {
+                            allName = allName.substring(1);
+                        }
                         //4.6 判斷類上面是否有註解，@Bean，如果有實例化過程
                         //4.6.1 獲取類的class
-
+                        Class<?> clazz = Class.forName(allName);
                         //4.6.2 判斷不是接口
 
-                        //4.7 把對象實例化後，放到map集合beanFactory
+                        if(!clazz.isInterface()){
+                            //4.6.3 判斷類上面是否有註解@Bean
+                            Annotation annotation = clazz.getAnnotation(Bean.class);
+                            if(annotation != null){
+                                //4.6.4 實例化
+                                Object newInstance = clazz.getConstructor().newInstance();
+                                //4.7 把對象實例化後，放到map集合beanFactory
+                                //4.7.1 判斷當前類如果有接口，讓接口class作為map的key
+                                if(clazz.getInterfaces().length > 0){
+                                    beanFactory.put(clazz.getInterfaces()[0], newInstance);
+                                }else {
+                                    beanFactory.put(clazz, newInstance);
+                                }
+                            }
+                        }
                     }
-
-
                 }
             }
-
         }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-    }
-
-    public static void main(String[] args) throws IOException {
-        AnnotationApplicationContext1("com.philip");
     }
 }

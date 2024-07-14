@@ -10,4 +10,10 @@ public class UserServiceImpl implements UserService {
 
     @Di
     private UserDao userDao;
+
+    @Override
+    public void add() {
+        System.out.println("service...");
+        // 調用 dao 的方法
+    }
 }
