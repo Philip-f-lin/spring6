@@ -1,10 +1,12 @@
 package com.philip.bean;
 
 import com.philip.anno.Bean;
+import com.philip.anno.Di;
 
 import java.io.File;
 import java.io.IOException;
 import java.lang.annotation.Annotation;
+import java.lang.reflect.Field;
 import java.net.URL;
 import java.net.URLDecoder;
 import java.util.Enumeration;
@@ -40,9 +42,12 @@ public class AnnotationApplicationContext implements ApplicationContext{
             // 包掃描
             loadBean(new File(filePath));
             System.out.println(filePath);
-
         }
+
+        // 屬性注入
+        loadDi();
     }
+
     // 包掃描過程，實例化
     private void loadBean(File file) throws Exception {
         //1 判斷是否是個文件夾
@@ -91,6 +96,37 @@ public class AnnotationApplicationContext implements ApplicationContext{
                             }
                         }
                     }
+                }
+            }
+        }
+    }
+
+    // 屬性注入
+    private void loadDi() throws IllegalAccessException {
+        // 實例化對象在 beanFactory 的 map 集合裡面
+        // 1 遍歷 beanFactory 的 map 集合
+        for (Map.Entry<Class, Object> entry : beanFactory.entrySet()) {
+            // 2 獲取 map 集合每個對象(value), 將每個對象的屬性獲取到
+            Object bean = entry.getValue();
+            // 獲取對象的 Class 類型
+            Class<?> clazz = bean.getClass();
+            // 獲取對象的所有屬性
+            Field[] declaredFields = clazz.getDeclaredFields();
+            // 3 遍歷每個對象的屬性數組，得到每個屬性
+            for (Field declaredField : declaredFields) {
+                // 4 判斷屬性上面是否有 @Di 註解
+                Di di = declaredField.getAnnotation(Di.class);
+                if (di != null) {
+                    // 如果是私有屬性，將其設置為可訪問
+                    declaredField.setAccessible(true);
+                    // 5 如果有 @Di 註解，進行屬性注入
+                    // 將對應類型的對象注入當前屬性
+                    // 例如，如果當前的 bean 是 UserServiceImpl，
+                    // clazz 是 UserServiceImpl 的 Class 對象，
+                    // declaredField.getType() 會返回屬性的類型，例如 UserDao，
+                    // beanFactory.get(declaredField.getType()) 會返回 UserDao 的實例
+                    // (總結：根據類型找到對象，進行注入)
+                    declaredField.set(bean, beanFactory.get(declaredField.getType()));
                 }
             }
         }

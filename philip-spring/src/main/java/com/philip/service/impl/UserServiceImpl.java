@@ -14,6 +14,7 @@ public class UserServiceImpl implements UserService {
     @Override
     public void add() {
         System.out.println("service...");
+        userDao.add();
         // 調用 dao 的方法
     }
 }
