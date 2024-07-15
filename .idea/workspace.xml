@@ -4,7 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="d2b9ee80-f131-4bcf-a126-7b6e03ec9b4d" name="Changes" comment="手寫IOC-實現屬性注入" />
+    <list default="true" id="d2b9ee80-f131-4bcf-a126-7b6e03ec9b4d" name="Changes" comment="AOP - 代理模式（靜態代理）">
+      <change afterPath="$PROJECT_DIR$/spring6-aop/src/main/java/com/philip/spring6/aop/example/ProxyFactory.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spring6-aop/src/main/java/com/philip/spring6/aop/example/TestCalculator.java" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -85,13 +88,26 @@
       <recent name="com.example.spring6.iocxml.ditest" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.UserTest">
+  <component name="RunManager" selected="Application.TestCalculator">
     <configuration name="AnnotationApplicationContext" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.philip.bean.AnnotationApplicationContext" />
       <module name="philip-spring" />
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="com.philip.bean.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="TestCalculator" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.philip.spring6.aop.example.TestCalculator" />
+      <module name="spring6-aop" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.philip.spring6.aop.example.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -108,22 +124,6 @@
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="TestCar.Test02" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="spring6-reflect" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.philip.reflect.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.philip.reflect" />
-      <option name="MAIN_CLASS_NAME" value="com.philip.reflect.TestCar" />
-      <option name="METHOD_NAME" value="Test02" />
-      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -162,11 +162,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.TestCalculator" />
         <item itemvalue="Application.UserTest" />
         <item itemvalue="Application.AnnotationApplicationContext" />
         <item itemvalue="JUnit.TestCar.test04" />
         <item itemvalue="JUnit.TestCar.test03" />
-        <item itemvalue="JUnit.TestCar.Test02" />
       </list>
     </recent_temporary>
   </component>
@@ -186,7 +186,7 @@
       <workItem from="1720578486250" duration="18069000" />
       <workItem from="1720689678866" duration="14658000" />
       <workItem from="1720868542802" duration="5701000" />
-      <workItem from="1721006334136" duration="5302000" />
+      <workItem from="1721006334136" duration="9599000" />
     </task>
     <task id="LOCAL-00001" summary="first commit">
       <option name="closed" value="true" />
@@ -396,7 +396,23 @@
       <option name="project" value="LOCAL" />
       <updated>1721025523666</updated>
     </task>
-    <option name="localTasksCounter" value="27" />
+    <task id="LOCAL-00027" summary="AOP - 場景模擬">
+      <option name="closed" value="true" />
+      <created>1721028054171</created>
+      <option name="number" value="00027" />
+      <option name="presentableId" value="LOCAL-00027" />
+      <option name="project" value="LOCAL" />
+      <updated>1721028054171</updated>
+    </task>
+    <task id="LOCAL-00028" summary="AOP - 代理模式（靜態代理）">
+      <option name="closed" value="true" />
+      <created>1721033920357</created>
+      <option name="number" value="00028" />
+      <option name="presentableId" value="LOCAL-00028" />
+      <option name="project" value="LOCAL" />
+      <updated>1721033920357</updated>
+    </task>
+    <option name="localTasksCounter" value="29" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -448,7 +464,9 @@
     <MESSAGE value="手寫IOC-實現Bean創建（上、中）" />
     <MESSAGE value="手寫IOC-實現Bean創建（下）" />
     <MESSAGE value="手寫IOC-實現屬性注入" />
-    <option name="LAST_COMMIT_MESSAGE" value="手寫IOC-實現屬性注入" />
+    <MESSAGE value="AOP - 場景模擬" />
+    <MESSAGE value="AOP - 代理模式（靜態代理）" />
+    <option name="LAST_COMMIT_MESSAGE" value="AOP - 代理模式（靜態代理）" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
