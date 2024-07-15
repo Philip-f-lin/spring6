@@ -4,11 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="d2b9ee80-f131-4bcf-a126-7b6e03ec9b4d" name="Changes" comment="手寫IOC-實現Bean創建（下）">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/philip-spring/src/main/java/com/philip/bean/AnnotationApplicationContext.java" beforeDir="false" afterPath="$PROJECT_DIR$/philip-spring/src/main/java/com/philip/bean/AnnotationApplicationContext.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/philip-spring/src/main/java/com/philip/service/impl/UserServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/philip-spring/src/main/java/com/philip/service/impl/UserServiceImpl.java" afterDir="false" />
-    </list>
+    <list default="true" id="d2b9ee80-f131-4bcf-a126-7b6e03ec9b4d" name="Changes" comment="手寫IOC-實現屬性注入" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -190,7 +186,7 @@
       <workItem from="1720578486250" duration="18069000" />
       <workItem from="1720689678866" duration="14658000" />
       <workItem from="1720868542802" duration="5701000" />
-      <workItem from="1721006334136" duration="4361000" />
+      <workItem from="1721006334136" duration="5302000" />
     </task>
     <task id="LOCAL-00001" summary="first commit">
       <option name="closed" value="true" />
@@ -392,7 +388,15 @@
       <option name="project" value="LOCAL" />
       <updated>1720924965123</updated>
     </task>
-    <option name="localTasksCounter" value="26" />
+    <task id="LOCAL-00026" summary="手寫IOC-實現屬性注入">
+      <option name="closed" value="true" />
+      <created>1721025523666</created>
+      <option name="number" value="00026" />
+      <option name="presentableId" value="LOCAL-00026" />
+      <option name="project" value="LOCAL" />
+      <updated>1721025523666</updated>
+    </task>
+    <option name="localTasksCounter" value="27" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -443,7 +447,8 @@
     <MESSAGE value="手寫IOC-回顧Java反射(下)" />
     <MESSAGE value="手寫IOC-實現Bean創建（上、中）" />
     <MESSAGE value="手寫IOC-實現Bean創建（下）" />
-    <option name="LAST_COMMIT_MESSAGE" value="手寫IOC-實現Bean創建（下）" />
+    <MESSAGE value="手寫IOC-實現屬性注入" />
+    <option name="LAST_COMMIT_MESSAGE" value="手寫IOC-實現屬性注入" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
