@@ -4,9 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="d2b9ee80-f131-4bcf-a126-7b6e03ec9b4d" name="Changes" comment="基於註解的AOP - 前置通知">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/spring6-aop/src/main/java/com/philip/spring6/aop/annoaop/CalculatorImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/spring6-aop/src/main/java/com/philip/spring6/aop/annoaop/CalculatorImpl.java" afterDir="false" />
+    <list default="true" id="d2b9ee80-f131-4bcf-a126-7b6e03ec9b4d" name="Changes" comment="基於註解的AOP - 各種通知">
       <change beforePath="$PROJECT_DIR$/spring6-aop/src/main/java/com/philip/spring6/aop/annoaop/LogAspect.java" beforeDir="false" afterPath="$PROJECT_DIR$/spring6-aop/src/main/java/com/philip/spring6/aop/annoaop/LogAspect.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -189,7 +187,7 @@
       <workItem from="1720689678866" duration="14658000" />
       <workItem from="1720868542802" duration="5701000" />
       <workItem from="1721006334136" duration="16356000" />
-      <workItem from="1721353535176" duration="4628000" />
+      <workItem from="1721353535176" duration="5003000" />
     </task>
     <task id="LOCAL-00001" summary="first commit">
       <option name="closed" value="true" />
@@ -439,7 +437,15 @@
       <option name="project" value="LOCAL" />
       <updated>1721113821957</updated>
     </task>
-    <option name="localTasksCounter" value="32" />
+    <task id="LOCAL-00032" summary="基於註解的AOP - 各種通知">
+      <option name="closed" value="true" />
+      <created>1721367232205</created>
+      <option name="number" value="00032" />
+      <option name="presentableId" value="LOCAL-00032" />
+      <option name="project" value="LOCAL" />
+      <updated>1721367232205</updated>
+    </task>
+    <option name="localTasksCounter" value="33" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -468,7 +474,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="注入Map類型" />
     <MESSAGE value="注入集合類型" />
     <MESSAGE value="p命名空間注入" />
     <MESSAGE value="引入外部屬性文件" />
@@ -493,6 +498,7 @@
     <MESSAGE value="AOP - 代理模式（靜態代理）" />
     <MESSAGE value="AOP - 代理模式（動態代理）" />
     <MESSAGE value="基於註解的AOP - 前置通知" />
-    <option name="LAST_COMMIT_MESSAGE" value="基於註解的AOP - 前置通知" />
+    <MESSAGE value="基於註解的AOP - 各種通知" />
+    <option name="LAST_COMMIT_MESSAGE" value="基於註解的AOP - 各種通知" />
   </component>
 </project>

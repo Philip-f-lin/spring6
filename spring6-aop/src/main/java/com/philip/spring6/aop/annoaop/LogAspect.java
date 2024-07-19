@@ -4,6 +4,7 @@ package com.philip.spring6.aop.annoaop;
 import org.aspectj.lang.JoinPoint;
 import org.aspectj.lang.ProceedingJoinPoint;
 import org.aspectj.lang.annotation.*;
+import org.springframework.beans.factory.annotation.Value;
 import org.springframework.stereotype.Component;
 
 import java.util.Arrays;
@@ -24,7 +25,8 @@ public class LogAspect {
         System.out.println("Logger --> 前置通知" + "，方法名：" + MethodName + "參數：" + Arrays.toString(args));
     }
     // 後置 @After()
-    @After(value = "execution(* com.philip.spring6.aop.annoaop.CalculatorImpl.add(..))")
+    //@After(value = "com.philip.spring6.aop.annoaop.LogAspect.pointCut()")
+    @After(value = "pointCut()")
     public void AfterMethod(JoinPoint joinPoint){
         String MethodName = joinPoint.getSignature().getName();
         System.out.println("Logger --> 後置通知" + "，方法名：" + MethodName);
@@ -68,5 +70,6 @@ public class LogAspect {
         return result;
     }
 
-
+    @Pointcut("execution(* com.philip.spring6.aop.annoaop.CalculatorImpl.*(..))")
+    public void pointCut(){}
 }
