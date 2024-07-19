@@ -1,54 +1,44 @@
-package com.philip.spring6.aop.annoaop;
+package com.philip.spring6.aop.xmlaop;
 
 
 import org.aspectj.lang.JoinPoint;
 import org.aspectj.lang.ProceedingJoinPoint;
 import org.aspectj.lang.annotation.*;
-import org.springframework.beans.factory.annotation.Value;
 import org.springframework.stereotype.Component;
 
 import java.util.Arrays;
 
 // 切面類
-@Aspect // 切面類
 @Component // 給IOC容器管理
 public class LogAspect {
 
-    // 設置切入點和通知類型
-    // 通知類型：
-    // 前置 @Before(value="切入點表達式配置切入點")
-    // 切入點表達式：execution（訪問修飾符 增強方法返回類型 增強方法所在類全路徑.方法名稱（方法參數 ））
-    @Before(value = "execution(public int com.philip.spring6.aop.annoaop.CalculatorImpl.*(..))")
+    // 前置通知
     public void beforeMethod(JoinPoint joinPoint){
         String MethodName = joinPoint.getSignature().getName();
         Object[] args = joinPoint.getArgs();
         System.out.println("Logger --> 前置通知" + "，方法名：" + MethodName + "參數：" + Arrays.toString(args));
     }
-    // 後置 @After()
-    //@After(value = "com.philip.spring6.aop.annoaop.LogAspect.pointCut()")
-    @After(value = "pointCut()")
+    // 後置通知
     public void afterMethod(JoinPoint joinPoint){
         String MethodName = joinPoint.getSignature().getName();
         System.out.println("Logger --> 後置通知" + "，方法名：" + MethodName);
     }
 
-    // 返回 @AfterReturning
-    @AfterReturning(value = "execution(* com.philip.spring6.aop.annoaop.CalculatorImpl.*(..))", returning = "result")
+    // 返回通知，獲取目標方法的返回值
     public void afterReturningMethod(JoinPoint joinPoint, Object result){
         String MethodName = joinPoint.getSignature().getName();
         System.out.println("Logger --> 返回通知" + "，方法名：" + MethodName + "，返回結果：" + result);
     }
-    // 異常 @AfterThrowing 獲取到目標方法異常訊息
+
+    // 異常通知，獲取到目標方法異常訊息
     // 目標方法出現異常，這個通知執行
-    @AfterThrowing(value = "execution(* com.philip.spring6.aop.annoaop.CalculatorImpl.*(..))", throwing = "ex")
     public void afterThrowingMethod(JoinPoint joinPoint, Throwable ex){
         String MethodName = joinPoint.getSignature().getName();
         System.out.println("Logger --> 異常通知" + "，方法名：" + MethodName + "，異常訊息：" + ex);
     }
 
 
-    // 環繞 @Around()
-    @Around(value = "execution(* com.philip.spring6.aop.annoaop.CalculatorImpl.*(..))")
+    // 環繞通知
     public Object aroundMethod(ProceedingJoinPoint joinPoint){
         String MethodName = joinPoint.getSignature().getName();
         Object[] args = joinPoint.getArgs();
@@ -70,6 +60,6 @@ public class LogAspect {
         return result;
     }
 
-    @Pointcut("execution(* com.philip.spring6.aop.annoaop.CalculatorImpl.*(..))")
+    @Pointcut("execution(* com.philip.spring6.aop.xmlaop.CalculatorImpl.*(..))")
     public void pointCut(){}
 }
