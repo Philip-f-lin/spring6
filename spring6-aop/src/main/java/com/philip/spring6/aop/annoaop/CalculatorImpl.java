@@ -8,6 +8,9 @@ public class CalculatorImpl implements Calculator {
     public int add(int i, int j) {
         int result = i + j;
         System.out.println("方法內部 result = " + result);
+
+        // 模擬異常
+        // int a = 1/0;
         return result;
     }
 

@@ -4,14 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="d2b9ee80-f131-4bcf-a126-7b6e03ec9b4d" name="Changes" comment="AOP - 代理模式（動態代理）">
-      <change afterPath="$PROJECT_DIR$/spring6-aop/src/main/java/com/philip/spring6/aop/annoaop/Calculator.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/spring6-aop/src/main/java/com/philip/spring6/aop/annoaop/CalculatorImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/spring6-aop/src/main/java/com/philip/spring6/aop/annoaop/LogAspect.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/spring6-aop/src/main/java/com/philip/spring6/aop/annoaop/TestAop.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/spring6-aop/src/main/resources/bean.xml" afterDir="false" />
+    <list default="true" id="d2b9ee80-f131-4bcf-a126-7b6e03ec9b4d" name="Changes" comment="基於註解的AOP - 前置通知">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring6-aop/src/main/java/com/philip/spring6/aop/annoaop/CalculatorImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/spring6-aop/src/main/java/com/philip/spring6/aop/annoaop/CalculatorImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring6-aop/src/main/java/com/philip/spring6/aop/annoaop/LogAspect.java" beforeDir="false" afterPath="$PROJECT_DIR$/spring6-aop/src/main/java/com/philip/spring6/aop/annoaop/LogAspect.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -72,7 +68,7 @@
     "project.structure.proportion": "0.15",
     "project.structure.side.proportion": "0.2",
     "settings.editor.selected.configurable": "MavenSettings",
-    "spring.configuration.checksum": "72e3f91c1fcbd34c62b9c6afccd1a31d",
+    "spring.configuration.checksum": "96ca054023b2ef287ddfaaf091f725cf",
     "vue.rearranger.settings.migration": "true"
   },
   "keyToStringList": {
@@ -192,7 +188,8 @@
       <workItem from="1720578486250" duration="18069000" />
       <workItem from="1720689678866" duration="14658000" />
       <workItem from="1720868542802" duration="5701000" />
-      <workItem from="1721006334136" duration="12990000" />
+      <workItem from="1721006334136" duration="16356000" />
+      <workItem from="1721353535176" duration="4628000" />
     </task>
     <task id="LOCAL-00001" summary="first commit">
       <option name="closed" value="true" />
@@ -426,7 +423,23 @@
       <option name="project" value="LOCAL" />
       <updated>1721036374057</updated>
     </task>
-    <option name="localTasksCounter" value="30" />
+    <task id="LOCAL-00030" summary="基於註解的AOP - 前置通知">
+      <option name="closed" value="true" />
+      <created>1721113736691</created>
+      <option name="number" value="00030" />
+      <option name="presentableId" value="LOCAL-00030" />
+      <option name="project" value="LOCAL" />
+      <updated>1721113736691</updated>
+    </task>
+    <task id="LOCAL-00031" summary="基於註解的AOP - 前置通知">
+      <option name="closed" value="true" />
+      <created>1721113821957</created>
+      <option name="number" value="00031" />
+      <option name="presentableId" value="LOCAL-00031" />
+      <option name="project" value="LOCAL" />
+      <updated>1721113821957</updated>
+    </task>
+    <option name="localTasksCounter" value="32" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -455,7 +468,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="注入List類型" />
     <MESSAGE value="注入Map類型" />
     <MESSAGE value="注入集合類型" />
     <MESSAGE value="p命名空間注入" />
@@ -480,17 +492,7 @@
     <MESSAGE value="AOP - 場景模擬" />
     <MESSAGE value="AOP - 代理模式（靜態代理）" />
     <MESSAGE value="AOP - 代理模式（動態代理）" />
-    <option name="LAST_COMMIT_MESSAGE" value="AOP - 代理模式（動態代理）" />
-  </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/philip-spring/src/main/java/com/philip/bean/AnnotationApplicationContext.java</url>
-          <line>30</line>
-          <option name="timeStamp" value="1" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
+    <MESSAGE value="基於註解的AOP - 前置通知" />
+    <option name="LAST_COMMIT_MESSAGE" value="基於註解的AOP - 前置通知" />
   </component>
 </project>
