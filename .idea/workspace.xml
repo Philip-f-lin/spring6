@@ -4,15 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="d2b9ee80-f131-4bcf-a126-7b6e03ec9b4d" name="Changes" comment="基於 XML 的 AOP - 五種通知類型">
-      <change afterPath="$PROJECT_DIR$/spring6-junit/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/spring6-junit/src/main/java/com/philip/spring6/junit/junit4/SpringTestJunit4.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/spring6-junit/src/main/java/com/philip/spring6/junit/junit5/SpringTestJunit5.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/spring6-junit/src/main/java/com/philip/spring6/junit/junit5/User.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/spring6-junit/src/main/resources/bean.xml" afterDir="false" />
+    <list default="true" id="d2b9ee80-f131-4bcf-a126-7b6e03ec9b4d" name="Changes" comment="JdbcTemplate - 概述和準備">
       <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-jdbc-tx/src/main/java/com/philip/spring6/jdbc/JDBCTemplateTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/spring-jdbc-tx/src/main/java/com/philip/spring6/jdbc/JDBCTemplateTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -95,20 +90,7 @@
       <recent name="com.example.spring6.iocxml.ditest" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.SpringTestJunit4">
-    <configuration name="TestEmployee" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.example.spring6.iocxml.ditest.TestEmployee" />
-      <module name="spring6-ioc-xml" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.example.spring6.iocxml.ditest.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
+  <component name="RunManager" selected="JUnit.JDBCTemplateTest.testUpdate">
     <configuration name="TestStudent" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.example.spring6.iocxml.dimap.TestStudent" />
       <module name="spring6-ioc-xml" />
@@ -118,6 +100,22 @@
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="JDBCTemplateTest.testUpdate" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="spring-jdbc-tx" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.philip.spring6.jdbc.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.philip.spring6.jdbc" />
+      <option name="MAIN_CLASS_NAME" value="com.philip.spring6.jdbc.JDBCTemplateTest" />
+      <option name="METHOD_NAME" value="testUpdate" />
+      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -171,11 +169,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.JDBCTemplateTest.testUpdate" />
         <item itemvalue="JUnit.SpringTestJunit4" />
         <item itemvalue="JUnit.SpringTestJunit5.userTest" />
         <item itemvalue="JUnit.TestAop.testAdd" />
         <item itemvalue="Application.TestStudent" />
-        <item itemvalue="Application.TestEmployee" />
       </list>
     </recent_temporary>
   </component>
@@ -196,7 +194,7 @@
       <workItem from="1720689678866" duration="14658000" />
       <workItem from="1720868542802" duration="5701000" />
       <workItem from="1721006334136" duration="16356000" />
-      <workItem from="1721353535176" duration="8429000" />
+      <workItem from="1721353535176" duration="11498000" />
     </task>
     <task id="LOCAL-00001" summary="first commit">
       <option name="closed" value="true" />
@@ -470,7 +468,23 @@
       <option name="project" value="LOCAL" />
       <updated>1721369288582</updated>
     </task>
-    <option name="localTasksCounter" value="35" />
+    <task id="LOCAL-00035" summary="JUnit - Spring 整合 JUnit5 和 JUnit4">
+      <option name="closed" value="true" />
+      <created>1721371673667</created>
+      <option name="number" value="00035" />
+      <option name="presentableId" value="LOCAL-00035" />
+      <option name="project" value="LOCAL" />
+      <updated>1721371673667</updated>
+    </task>
+    <task id="LOCAL-00036" summary="JdbcTemplate - 概述和準備">
+      <option name="closed" value="true" />
+      <created>1721373337021</created>
+      <option name="number" value="00036" />
+      <option name="presentableId" value="LOCAL-00036" />
+      <option name="project" value="LOCAL" />
+      <updated>1721373337022</updated>
+    </task>
+    <option name="localTasksCounter" value="37" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -499,8 +513,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="引入外部屬性文件" />
-    <MESSAGE value="bean的作用域" />
     <MESSAGE value="bean的生命週期" />
     <MESSAGE value="bean的完整生命週期" />
     <MESSAGE value="FactoryBean" />
@@ -524,6 +536,8 @@
     <MESSAGE value="基於註解的AOP - 各種通知" />
     <MESSAGE value="基於註解的AOP - 重用切入點和切面優先級" />
     <MESSAGE value="基於 XML 的 AOP - 五種通知類型" />
-    <option name="LAST_COMMIT_MESSAGE" value="基於 XML 的 AOP - 五種通知類型" />
+    <MESSAGE value="JUnit - Spring 整合 JUnit5 和 JUnit4" />
+    <MESSAGE value="JdbcTemplate - 概述和準備" />
+    <option name="LAST_COMMIT_MESSAGE" value="JdbcTemplate - 概述和準備" />
   </component>
 </project>
