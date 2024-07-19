@@ -4,14 +4,15 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="d2b9ee80-f131-4bcf-a126-7b6e03ec9b4d" name="Changes" comment="基於註解的AOP - 重用切入點和切面優先級">
-      <change afterPath="$PROJECT_DIR$/spring6-aop/src/main/java/com/philip/spring6/aop/xmlaop/Calculator.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/spring6-aop/src/main/java/com/philip/spring6/aop/xmlaop/CalculatorImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/spring6-aop/src/main/java/com/philip/spring6/aop/xmlaop/LogAspect.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/spring6-aop/src/main/java/com/philip/spring6/aop/xmlaop/TestAop.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/spring6-aop/src/main/resources/beanaop.xml" afterDir="false" />
+    <list default="true" id="d2b9ee80-f131-4bcf-a126-7b6e03ec9b4d" name="Changes" comment="基於 XML 的 AOP - 五種通知類型">
+      <change afterPath="$PROJECT_DIR$/spring6-junit/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spring6-junit/src/main/java/com/philip/spring6/junit/junit4/SpringTestJunit4.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spring6-junit/src/main/java/com/philip/spring6/junit/junit5/SpringTestJunit5.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spring6-junit/src/main/java/com/philip/spring6/junit/junit5/User.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spring6-junit/src/main/resources/bean.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/spring6-aop/src/main/java/com/philip/spring6/aop/annoaop/LogAspect.java" beforeDir="false" afterPath="$PROJECT_DIR$/spring6-aop/src/main/java/com/philip/spring6/aop/annoaop/LogAspect.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -23,8 +24,8 @@
       <list>
         <option value="AnnotationType" />
         <option value="Interface" />
-        <option value="Class" />
         <option value="spring-beans.schema" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -94,7 +95,7 @@
       <recent name="com.example.spring6.iocxml.ditest" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.TestAop.testAdd">
+  <component name="RunManager" selected="JUnit.SpringTestJunit4">
     <configuration name="TestEmployee" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.example.spring6.iocxml.ditest.TestEmployee" />
       <module name="spring6-ioc-xml" />
@@ -121,6 +122,37 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="SpringTestJunit4" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="spring6-junit" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.philip.spring6.junit.junit4.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.philip.spring6.junit.junit4" />
+      <option name="MAIN_CLASS_NAME" value="com.philip.spring6.junit.junit4.SpringTestJunit4" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="SpringTestJunit5.userTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="spring6-junit" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.philip.spring6.junit.junit5.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.philip.spring6.junit.junit5" />
+      <option name="MAIN_CLASS_NAME" value="com.philip.spring6.junit.junit5.SpringTestJunit5" />
+      <option name="METHOD_NAME" value="userTest" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="TestAop.testAdd" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="spring6-aop" />
       <extension name="coverage">
@@ -137,28 +169,13 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="TestBook.testSetter" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="spring6-ioc-xml" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.example.spring6.iocxml.di.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.example.spring6.iocxml.di" />
-      <option name="MAIN_CLASS_NAME" value="com.example.spring6.iocxml.di.TestBook" />
-      <option name="METHOD_NAME" value="testSetter" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.SpringTestJunit4" />
+        <item itemvalue="JUnit.SpringTestJunit5.userTest" />
         <item itemvalue="JUnit.TestAop.testAdd" />
         <item itemvalue="Application.TestStudent" />
         <item itemvalue="Application.TestEmployee" />
-        <item itemvalue="JUnit.TestBook.testSetter" />
       </list>
     </recent_temporary>
   </component>
@@ -179,7 +196,7 @@
       <workItem from="1720689678866" duration="14658000" />
       <workItem from="1720868542802" duration="5701000" />
       <workItem from="1721006334136" duration="16356000" />
-      <workItem from="1721353535176" duration="6724000" />
+      <workItem from="1721353535176" duration="8429000" />
     </task>
     <task id="LOCAL-00001" summary="first commit">
       <option name="closed" value="true" />
@@ -445,7 +462,15 @@
       <option name="project" value="LOCAL" />
       <updated>1721367599912</updated>
     </task>
-    <option name="localTasksCounter" value="34" />
+    <task id="LOCAL-00034" summary="基於 XML 的 AOP - 五種通知類型">
+      <option name="closed" value="true" />
+      <created>1721369288582</created>
+      <option name="number" value="00034" />
+      <option name="presentableId" value="LOCAL-00034" />
+      <option name="project" value="LOCAL" />
+      <updated>1721369288582</updated>
+    </task>
+    <option name="localTasksCounter" value="35" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -474,7 +499,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="p命名空間注入" />
     <MESSAGE value="引入外部屬性文件" />
     <MESSAGE value="bean的作用域" />
     <MESSAGE value="bean的生命週期" />
@@ -499,6 +523,7 @@
     <MESSAGE value="基於註解的AOP - 前置通知" />
     <MESSAGE value="基於註解的AOP - 各種通知" />
     <MESSAGE value="基於註解的AOP - 重用切入點和切面優先級" />
-    <option name="LAST_COMMIT_MESSAGE" value="基於註解的AOP - 重用切入點和切面優先級" />
+    <MESSAGE value="基於 XML 的 AOP - 五種通知類型" />
+    <option name="LAST_COMMIT_MESSAGE" value="基於 XML 的 AOP - 五種通知類型" />
   </component>
 </project>

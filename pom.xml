@@ -15,6 +15,7 @@
         <module>spring6-reflect</module>
         <module>philip-spring</module>
         <module>spring6-aop</module>
+        <module>spring6-junit</module>
     </modules>
 
     <properties>
@@ -40,10 +41,24 @@
             <artifactId>spring-aspects</artifactId>
             <version>6.0.2</version>
         </dependency>
+        <!--spring 整合junit相關依賴-->
+        <dependency>
+            <groupId>org.springframework</groupId>
+            <artifactId>spring-test</artifactId>
+            <version>6.0.2</version>
+        </dependency>
+
         <dependency>
             <groupId>org.junit.jupiter</groupId>
             <artifactId>junit-jupiter-api</artifactId>
             <version>5.6.3</version>
+        </dependency>
+
+        <!--junit4 測試-->
+        <dependency>
+            <groupId>junit</groupId>
+            <artifactId>junit</artifactId>
+            <version>4.13.2</version>
         </dependency>
 
         <!--log4j2的依賴-->
