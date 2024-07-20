@@ -4,10 +4,13 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="d2b9ee80-f131-4bcf-a126-7b6e03ec9b4d" name="Changes" comment="JdbcTemplate - 實現 CRUD 操作(上)">
-      <change afterPath="$PROJECT_DIR$/spring-jdbc-tx/src/main/java/com/philip/spring6/jdbc/Emp.java" afterDir="false" />
+    <list default="true" id="d2b9ee80-f131-4bcf-a126-7b6e03ec9b4d" name="Changes" comment="JdbcTemplate - 實現 CRUD 操作(下)">
+      <change afterPath="$PROJECT_DIR$/spring6-i18n/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spring6-i18n/src/main/java/com/philip/spring6/javai18n/ResourceI18n.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spring6-i18n/src/main/resources/messages_en_GB.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spring6-i18n/src/main/resources/messages_zh_TW.properties" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/spring-jdbc-tx/src/main/java/com/philip/spring6/jdbc/JDBCTemplateTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/spring-jdbc-tx/src/main/java/com/philip/spring6/jdbc/JDBCTemplateTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -90,7 +93,20 @@
       <recent name="com.example.spring6.iocxml.ditest" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.JDBCTemplateTest.testSelectValue">
+  <component name="RunManager" selected="Application.ResourceI18n">
+    <configuration name="ResourceI18n" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.philip.spring6.javai18n.ResourceI18n" />
+      <module name="spring6-i18n" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.philip.spring6.javai18n.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="JDBCTemplateTest.testSelectList" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="spring-jdbc-tx" />
       <extension name="coverage">
@@ -155,28 +171,13 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="SpringTestJunit4" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="spring6-junit" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.philip.spring6.junit.junit4.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.philip.spring6.junit.junit4" />
-      <option name="MAIN_CLASS_NAME" value="com.philip.spring6.junit.junit4.SpringTestJunit4" />
-      <option name="TEST_OBJECT" value="class" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.ResourceI18n" />
         <item itemvalue="JUnit.JDBCTemplateTest.testSelectValue" />
         <item itemvalue="JUnit.JDBCTemplateTest.testSelectList" />
         <item itemvalue="JUnit.JDBCTemplateTest.testSelectObject" />
         <item itemvalue="JUnit.JDBCTemplateTest.testUpdate" />
-        <item itemvalue="JUnit.SpringTestJunit4" />
       </list>
     </recent_temporary>
   </component>
@@ -197,7 +198,7 @@
       <workItem from="1720689678866" duration="14658000" />
       <workItem from="1720868542802" duration="5701000" />
       <workItem from="1721006334136" duration="16356000" />
-      <workItem from="1721353535176" duration="13681000" />
+      <workItem from="1721353535176" duration="15946000" />
     </task>
     <task id="LOCAL-00001" summary="first commit">
       <option name="closed" value="true" />
@@ -495,7 +496,23 @@
       <option name="project" value="LOCAL" />
       <updated>1721376194725</updated>
     </task>
-    <option name="localTasksCounter" value="38" />
+    <task id="LOCAL-00038" summary="JdbcTemplate - 實現 CRUD 操作(下)">
+      <option name="closed" value="true" />
+      <created>1721377886343</created>
+      <option name="number" value="00038" />
+      <option name="presentableId" value="LOCAL-00038" />
+      <option name="project" value="LOCAL" />
+      <updated>1721377886344</updated>
+    </task>
+    <task id="LOCAL-00039" summary="JdbcTemplate - 實現 CRUD 操作(下)">
+      <option name="closed" value="true" />
+      <created>1721377917909</created>
+      <option name="number" value="00039" />
+      <option name="presentableId" value="LOCAL-00039" />
+      <option name="project" value="LOCAL" />
+      <updated>1721377917909</updated>
+    </task>
+    <option name="localTasksCounter" value="40" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -524,7 +541,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="bean的完整生命週期" />
     <MESSAGE value="FactoryBean" />
     <MESSAGE value="基於xml自動裝配" />
     <MESSAGE value="基於註解管理Bean-創建Bean對象" />
@@ -549,6 +565,7 @@
     <MESSAGE value="JUnit - Spring 整合 JUnit5 和 JUnit4" />
     <MESSAGE value="JdbcTemplate - 概述和準備" />
     <MESSAGE value="JdbcTemplate - 實現 CRUD 操作(上)" />
-    <option name="LAST_COMMIT_MESSAGE" value="JdbcTemplate - 實現 CRUD 操作(上)" />
+    <MESSAGE value="JdbcTemplate - 實現 CRUD 操作(下)" />
+    <option name="LAST_COMMIT_MESSAGE" value="JdbcTemplate - 實現 CRUD 操作(下)" />
   </component>
 </project>
