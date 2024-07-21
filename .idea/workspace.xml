@@ -4,11 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="d2b9ee80-f131-4bcf-a126-7b6e03ec9b4d" name="Changes" comment="JdbcTemplate - 實現 CRUD 操作(下)">
-      <change afterPath="$PROJECT_DIR$/spring6-i18n/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/spring6-i18n/src/main/java/com/philip/spring6/javai18n/ResourceI18n.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/spring6-i18n/src/main/resources/messages_en_GB.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/spring6-i18n/src/main/resources/messages_zh_TW.properties" afterDir="false" />
+    <list default="true" id="d2b9ee80-f131-4bcf-a126-7b6e03ec9b4d" name="Changes" comment="i18n - Java 國際化">
+      <change afterPath="$PROJECT_DIR$/spring-validator/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spring-validator/src/main/java/com/philip/spring6/validator/one/Person.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spring-validator/src/main/java/com/philip/spring6/validator/one/PersonValidator.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spring-validator/src/main/java/com/philip/spring6/validator/one/TestPerson.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
     </list>
@@ -71,7 +72,7 @@
     "project.structure.proportion": "0.15",
     "project.structure.side.proportion": "0.2",
     "settings.editor.selected.configurable": "MavenSettings",
-    "spring.configuration.checksum": "96ca054023b2ef287ddfaaf091f725cf",
+    "spring.configuration.checksum": "076a9088ecb85154c62a3748e2e277d2",
     "vue.rearranger.settings.migration": "true"
   },
   "keyToStringList": {
@@ -93,13 +94,26 @@
       <recent name="com.example.spring6.iocxml.ditest" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.ResourceI18n">
+  <component name="RunManager" selected="Application.TestPerson">
     <configuration name="ResourceI18n" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.philip.spring6.javai18n.ResourceI18n" />
       <module name="spring6-i18n" />
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="com.philip.spring6.javai18n.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="TestPerson" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.philip.spring6.validator.one.TestPerson" />
+      <module name="spring-validator" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.philip.spring6.validator.one.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -155,29 +169,13 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="JDBCTemplateTest.testUpdate" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="spring-jdbc-tx" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.philip.spring6.jdbc.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.philip.spring6.jdbc" />
-      <option name="MAIN_CLASS_NAME" value="com.philip.spring6.jdbc.JDBCTemplateTest" />
-      <option name="METHOD_NAME" value="testUpdate" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.TestPerson" />
         <item itemvalue="Application.ResourceI18n" />
         <item itemvalue="JUnit.JDBCTemplateTest.testSelectValue" />
         <item itemvalue="JUnit.JDBCTemplateTest.testSelectList" />
         <item itemvalue="JUnit.JDBCTemplateTest.testSelectObject" />
-        <item itemvalue="JUnit.JDBCTemplateTest.testUpdate" />
       </list>
     </recent_temporary>
   </component>
@@ -198,7 +196,8 @@
       <workItem from="1720689678866" duration="14658000" />
       <workItem from="1720868542802" duration="5701000" />
       <workItem from="1721006334136" duration="16356000" />
-      <workItem from="1721353535176" duration="15946000" />
+      <workItem from="1721353535176" duration="19525000" />
+      <workItem from="1721529966058" duration="1217000" />
     </task>
     <task id="LOCAL-00001" summary="first commit">
       <option name="closed" value="true" />
@@ -512,7 +511,15 @@
       <option name="project" value="LOCAL" />
       <updated>1721377917909</updated>
     </task>
-    <option name="localTasksCounter" value="40" />
+    <task id="LOCAL-00040" summary="i18n - Java 國際化">
+      <option name="closed" value="true" />
+      <created>1721451813510</created>
+      <option name="number" value="00040" />
+      <option name="presentableId" value="LOCAL-00040" />
+      <option name="project" value="LOCAL" />
+      <updated>1721451813510</updated>
+    </task>
+    <option name="localTasksCounter" value="41" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -541,7 +548,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="FactoryBean" />
     <MESSAGE value="基於xml自動裝配" />
     <MESSAGE value="基於註解管理Bean-創建Bean對象" />
     <MESSAGE value="基於註解管理Bean-@Autowired注入（上）" />
@@ -566,6 +572,7 @@
     <MESSAGE value="JdbcTemplate - 概述和準備" />
     <MESSAGE value="JdbcTemplate - 實現 CRUD 操作(上)" />
     <MESSAGE value="JdbcTemplate - 實現 CRUD 操作(下)" />
-    <option name="LAST_COMMIT_MESSAGE" value="JdbcTemplate - 實現 CRUD 操作(下)" />
+    <MESSAGE value="i18n - Java 國際化" />
+    <option name="LAST_COMMIT_MESSAGE" value="i18n - Java 國際化" />
   </component>
 </project>
